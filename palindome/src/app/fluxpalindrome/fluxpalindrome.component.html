@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-12 col-sm-12">
+      <ul class="event-list">
+        <li
+          *ngFor="let element of data"
+          [ngClass]="check(element.label) ? 'palindrome': 'not_palindrome'">
+          {{element.label}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
